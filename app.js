@@ -97,14 +97,15 @@ app.get('/edit/:uid',(req,res)=>{
     }
   })
 })
-app.get('/delete/:uid',(req,res)=>{
-  const id=req.params.uid
-
-    User.deleteOne({_id:id},(err)=>{
-       if(!err)
-         res.redirect("/list")
-     })
-  })
+// app.get('/delete/:uid',(req,res)=>{
+//   const id=req.params.uid
+//
+//  User.deleteOne({_id:id}).then(function(){
+//     console.log("Data deleted"); // Success
+// }).catch(function(error){
+//     console.log(error); // Failure
+// });
+//   })
 app.listen(process.env.PORT || 3000,()=>{
   console.log("server started on port 3000");
 })
