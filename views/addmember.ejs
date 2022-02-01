@@ -1,0 +1,29 @@
+<%- include("partials/header"); -%>
+<div class="container">
+  <form class="" action="/addmember" method="post">
+    <div class="mb-3">
+      <label for="name" class="form-label">Name</label>
+      <input type="text" class="form-control" id="name" name="name" aria-describedby="emailHelp">
+    <div class="mb-3">
+      <label for="contact" class="form-label">Contact No:</label>
+      <input type="tel" class="form-control" id="contact"name="contact" >
+    </div>
+    <div class="mb-3 ">
+      <label class="formlabel" for="email">Email</label>
+      <input type="email" class="form-control" id="email" name="email">
+    </div>
+    <button type="submit" class="btn btn-primary btn-lg homeBtn">Add</button>
+  </form>
+</div>
+
+    <!-- <form class="" action="/addmember" method="post">
+      <label for="name">Name:</label>
+      <input type="name" id="name"name="name" value="">
+      <label for="contact">Contact No:</label>
+      <input type="tel" id="contact"name="contact" value="">
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" value="">
+      <button type="submit" name="button">ADD</button>
+    </form> -->
+  </body>
+</html>

@@ -1,0 +1,26 @@
+<%- include("partials/header") -%>
+ <div class="container">
+  <form class="" action="/edit/<%= user._id%>" method="post">
+    <div class="mb-3">
+      <label for="name" class="form-label">Name</label>
+      <input type="text" class="form-control" id="name" name="name"  value="<%= user.name%>">
+    <div class="mb-3">
+      <label for="contact" class="form-label">Contact No:</label>
+      <input type="tel" class="form-control" id="contact"name="contact" value="<%= user.contact%>" >
+    </div>
+    <div class="mb-3 ">
+      <label class="formlabel" for="email">Email</label>
+      <input type="email" class="form-control" id="email" name="email" value="<%= user.email%>">
+    </div>
+    <div class="btnDiv">
+      <button type="submit" class="btn btn-primary ">Update</button>
+      <a href="/delete/<%= user.contact%>">
+       <button type="" class="btn btn-primary" name="button">
+        Delete Record
+       </button>
+       </a>
+    </div>
+  </form>
+</div>
+</body>
+</html>
